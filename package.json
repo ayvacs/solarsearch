@@ -1,0 +1,28 @@
+{
+  "name": "solarsearch",
+  "version": "0.0.0",
+  "description": "search the solar system in your browser!",
+  "scripts": {
+    "start": "node ./dist/index.js",
+    "test": "npm run build && npm start",
+    "prebuild": "rimraf ./dist",
+    "build": "tsc",
+    "postbuild": "copyfiles -u 1 \"./public/**/*\" \"./dist\"  &&  copyfiles \"lib/**/*\" \"dist/scripts\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ayvacs/solarsearch.git"
+  },
+  "author": "ayvacs",
+  "license": "GPL-3.0-only",
+  "bugs": {
+    "url": "https://github.com/ayvacs/solarsearch/issues"
+  },
+  "homepage": "https://github.com/ayvacs/solarsearch#readme",
+  "dependencies": {
+    "copyfiles": "^2.4.1",
+    "rimraf": "^5.0.7",
+    "tsc": "^2.0.4",
+    "typescript": "^5.5.2"
+  }
+}

@@ -1,0 +1,22 @@
+{
+
+    "compilerOptions": {
+        "target": "es5",
+        "module": "NodeNext",
+        "moduleResolution": "NodeNext",
+        "rootDir": "./src",
+        "outDir": "./dist",
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "strict": false,
+        "skipLibCheck": true,
+        "removeComments": true,
+        "lib": [ "dom", "es2015" ]
+    },
+
+    "include": [
+        "src/**/*.js",
+        "src/**/*.ts"
+    ]
+    
+}
