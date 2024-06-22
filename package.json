@@ -22,6 +22,7 @@
   "dependencies": {
     "copyfiles": "^2.4.1",
     "rimraf": "^5.0.7",
+    "three": "^0.165.0",
     "tsc": "^2.0.4",
     "typescript": "^5.5.2"
   }
